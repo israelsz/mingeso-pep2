@@ -30,7 +30,7 @@ public class CompraTest {
   JavascriptExecutor js;
   @Before
   public void setUp() {
-    System.setProperty("webdriver.gecko.driver","C:/Users/Israel/Desktop/Codigos/Mingeso/PEP2/P8-selenium/geckodriver.exe");
+    System.setProperty("webdriver.gecko.driver","C:/Users/yelpa/Desktop/mingeso-pep2/P8-selenium/geckodriver.exe");
     driver = new FirefoxDriver();
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();

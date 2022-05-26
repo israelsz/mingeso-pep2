@@ -1,0 +1,4 @@
+agregar a build.gradle (.kts)
+idv("org.sonarqube")
+con eso al ejecutar el build el analisis se efectua automaticamente
+para jmeter
