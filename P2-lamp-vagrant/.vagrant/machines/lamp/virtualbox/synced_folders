@@ -1,0 +1,1 @@
+{"virtualbox":{"/data_vagrant":{"guestpath":"/data_vagrant","hostpath":"/mnt/c/Users/yelpa/Documents/mingeso_vagrant/data","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/mnt/c/Users/yelpa/Documents/mingeso_vagrant","disabled":false,"__vagrantfile":true}}}

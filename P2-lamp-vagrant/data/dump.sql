@@ -1,0 +1,28 @@
+CREATE TABLE IF NOT EXISTS paises (
+	nombre varchar(255) NOT NULL);
+INSERT INTO paises(nombre) VALUES('Argentina');
+INSERT INTO paises(nombre) VALUES('Bolivia');
+INSERT INTO paises(nombre) VALUES('Brasil');
+INSERT INTO paises(nombre) VALUES('Chile');
+INSERT INTO paises(nombre) VALUES('Colombia');
+INSERT INTO paises(nombre) VALUES('Costa Rica');
+INSERT INTO paises(nombre) VALUES('Cuba');
+INSERT INTO paises(nombre) VALUES('Ecuador');
+INSERT INTO paises(nombre) VALUES('El Salvador');
+INSERT INTO paises(nombre) VALUES('Guayana Francesa');
+INSERT INTO paises(nombre) VALUES('Granada');
+INSERT INTO paises(nombre) VALUES('Guatemala');
+INSERT INTO paises(nombre) VALUES('Guayana');
+INSERT INTO paises(nombre) VALUES('Haití');
+INSERT INTO paises(nombre) VALUES('Honduras');
+INSERT INTO paises(nombre) VALUES('Jamaica');
+INSERT INTO paises(nombre) VALUES('México');
+INSERT INTO paises(nombre) VALUES('Nicaragua');
+INSERT INTO paises(nombre) VALUES('Paraguay');
+INSERT INTO paises(nombre) VALUES('Panamá');
+INSERT INTO paises(nombre) VALUES('Perú');
+INSERT INTO paises(nombre) VALUES('Puerto Rico');
+INSERT INTO paises(nombre) VALUES('República Dominicana');
+INSERT INTO paises(nombre) VALUES('Surinam');
+INSERT INTO paises(nombre) VALUES('Uruguay');
+INSERT INTO paises(nombre) VALUES('Venezuela');

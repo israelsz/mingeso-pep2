@@ -1,0 +1,16 @@
+Instrucciones:
+En WSL
+
+-> cd /mnt/c/Users/yelpa/Documents/mingeso_vagrant
+-> vagrant up
+-> La pagina se desplegara en http://192.168.56.10
+-> para apagar vagrant usar vagrant halt
+
+-> password del ssh = vagrant
+
+Nota:
+vagrant up --provision ejecuta todas las configuraciones de los playbooks
+sin embargo fallara al llegar a la base de datos, debido a que
+en la maquina virtual creada por vagrant ya existe la base de datos de mysql.
+
+Falla por querer setear una nueva contraseña de root

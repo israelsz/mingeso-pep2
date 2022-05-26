@@ -1,0 +1,30 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
+# configuracion de la maquina
+Vagrant.configure('2') do |config|
+  #Sisteme de la maquina
+  config.vm.box = "ubuntu/focal64"
+  config.vm.provider :virtualbox do |vbox|
+    vbox.memory = 1024
+    vbox.cpus = 1
+    vbox.customize ['modifyvm', :id, '--cpuexecutioncap', '50']
+    vbox.customize ['modifyvm', :id, '--uartmode1', 'disconnected']
+  end
+  #Nombre de la maquina y dir IP
+  config.vm.define 'lamp' do |node|
+    node.vm.hostname = 'lamp'
+    node.vm.network :private_network, ip: '192.168.56.10'
+    node.vm.post_up_message = 'Web: http://192.168.56.10'
+  end
+  #Carpeta de sync 
+  config.vm.synced_folder 'data', '/data_vagrant'
+  config.vm.provision :shell, :inline => "sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config; sudo systemctl restart sshd;", run: "always"
+  #Configuracion de ansible
+  config.vm.provision :ansible_local do |ansible|
+    ansible.provisioning_path = '/data_vagrant'
+    ansible.playbook = 'playbook.yml'
+    ansible.sudo = true
+  end
+end
