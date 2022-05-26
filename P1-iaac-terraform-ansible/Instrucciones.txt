@@ -1,0 +1,5 @@
+EN WSL
+dirigirse al directorio ~/terraform_ansible
+-> ejecutar comando disponible dentro del archivo droplets.tf
+terraform apply -var "do_token=${DO_PAT}" -var "pvt_key=~/.ssh/id_rsa" -var "pub_key=~/.ssh/id_rsa.pub"
+# terraform destroy -var "do_token=${DO_PAT}" -var "pvt_key=~/.ssh/id_rsa" -var "pub_key=~/.ssh/id_rsa.pub"

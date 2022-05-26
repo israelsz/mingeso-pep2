@@ -1,4 +1,11 @@
+
+ Para efectuar el analisis:
+
 agregar a build.gradle (.kts)
 idv("org.sonarqube")
 con eso al ejecutar el build el analisis se efectua automaticamente
 para jmeter
+
+Para ver analisis:
+-> abrir sonarqube/bin/windows/startSonar.bat
+-> abrir en el navegador la pagina localhost:9000
